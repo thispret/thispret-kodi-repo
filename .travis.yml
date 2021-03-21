@@ -1,0 +1,18 @@
+dist: trusty
+language: python
+
+python:
+  - "2.7"
+
+env:
+  global:
+    - ENCRYPTION_LABEL: 10676951a36e
+    - COMMIT_AUTHOR_EMAIL: jpsethi@gmail.com
+
+script:
+  - bash .github/build.sh
+
+branches:
+  only:
+    - master
+    # Add more branches if required
